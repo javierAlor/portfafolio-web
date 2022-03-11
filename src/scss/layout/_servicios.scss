@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.servicios{
+    background-color: v.$box;
+    margin-bottom: 6rem;
+    padding-top: 3rem;
+    h2{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid #1CB698;
+            width: 80px;
+            top: 4.5rem;
+            left: 0;
+           
+          }
+    }
+}
+.contenedor-servicios{
+   
+    display: grid;
+    @include m.grid(1, 1rem);
+    @include m.telefono{
+    @include m.grid(2, 2rem);
+        
+    }
+    @include m.tablet{
+        @include m.grid(3, 2rem);
+            
+        }
+    padding: 5rem 0;
+    .servicio{
+        border: 1px solid v.$verde;
+        padding: 3rem 2rem;
+        border-radius: .5rem;
+        background-color: v.$box;
+        h3{
+            margin-bottom: 1rem;
+        }
+       a{
+           color: v.$blanco;
+       }
+       i{   
+           color: v.$verde; 
+            font-size: 4rem;
+            margin-bottom: 2rem;
+       }
+    }
+}

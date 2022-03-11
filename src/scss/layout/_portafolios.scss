@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.portafolios {
+    h2{
+    position: relative;
+
+        margin-bottom: 5rem;
+        &::after{
+            @include m.lineaVerde;
+            width: 150px;
+        }
+    }
+}
+.portafolios__cont{
+    display: grid;
+    @include m.grid(1,2rem);
+    @include m.tablet{
+    display: grid;
+        @include m.grid(2,2rem);
+    }
+    @include m.desktop{
+        @include m.grid(3,2rem);
+    }
+   .portafolio1{
+        background-image: url('/src/img/portfolio/portafolio1.jpg');
+        background-size: cover;
+        height: 100%;
+    }
+    // .portafolio2{
+    //     background-image: url('/src/img/portfolio/portafolio2.jpg');
+    //     background-size: cover;  
+    // }
+    .portafolio{
+        position: relative;
+        height: 250px;
+        .portafolio-img{
+            position: absolute;
+        }
+        .portafolio-info{
+            position: absolute;
+        }
+        @include m.tablet{
+            height: 250!important;
+        }
+      
+        background-color: red;
+    }
+}

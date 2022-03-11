@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about-me{
+
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 4rem 2rem;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    gap: 5rem;
+    .img{
+        max-width: 200px;
+        display: none;
+        @include m.tablet{
+            display: block;
+        }
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+          color: v.$blanco;  
+          line-height: 1.5;
+         
+        }
+        
+        h2{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                border-bottom: 2px solid #1CB698;
+                width: 80px;
+                top: 4.5rem;
+                left: 0;
+               
+              }
+        }
+       
+    }
+}
+.info .botones{
+    margin-top: 2rem;
+    a{
+        text-align: center;
+        
+    }
+    .btn__cv{
+        transition: all .2s ease-in;
+        &:hover{
+            color: rgb(99, 42, 42);
+            background-color: v.$blanco;
+        }
+    }
+}
