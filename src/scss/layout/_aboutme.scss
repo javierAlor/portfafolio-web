@@ -51,8 +51,7 @@
     .btn__cv{
         transition: all .2s ease-in;
         &:hover{
-            color: rgb(99, 42, 42);
-            background-color: v.$blanco;
+          background-color: v.$box;
         }
     }
 }

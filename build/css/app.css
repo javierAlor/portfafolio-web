@@ -603,8 +603,7 @@ ul {
   transition: all 0.2s ease-in;
 }
 .info .botones .btn__cv:hover {
-  color: #632a2a;
-  background-color: #ffffff;
+  background-color: #252A2E;
 }
 
 .servicios {
@@ -699,8 +698,43 @@ ul {
   }
 }
 .portafolios__cont .portafolio1 {
-  background-image: url("/src/img/portfolio/portafolio1.jpg");
+  background-image: url("/src/img/portfolio/1.jpg");
   background-size: cover;
+  height: 100%;
+}
+.portafolios__cont .portafolio2 {
+  background-image: url("/src/img/portfolio/2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: round;
+  height: 100%;
+}
+.portafolios__cont .portafolio3 {
+  background-image: url("/src/img/portfolio/3.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: round;
+  height: 100%;
+}
+.portafolios__cont .portafolio4 {
+  background-image: url("/src/img/portfolio/4.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: round;
+  height: 100%;
+}
+.portafolios__cont .portafolio5 {
+  background-image: url("/src/img/portfolio/5.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: round;
+  height: 100%;
+}
+.portafolios__cont .portafolio6 {
+  background-image: url("/src/img/portfolio/6.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: round;
   height: 100%;
 }
 .portafolios__cont .portafolio {

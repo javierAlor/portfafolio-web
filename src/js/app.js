@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
    
     //typeIt
     new TypeIt("#txtIntro", {
-        strings: "Bienvenido a mi portal web!",
+        strings: "Desarrollador Web!",
       }).go();
 });
 
