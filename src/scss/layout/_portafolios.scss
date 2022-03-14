@@ -28,7 +28,7 @@
         height: 100%;
     }
     .portafolio2{
-        background-image: url('/src/img/portfolio/2.jpg');
+        background-image: url('/src/img/portfolio/4.png');
         background-size: cover;
         background-position: center center;
         background-repeat: round;
@@ -36,7 +36,7 @@
         height: 100%;
     }
     .portafolio3{
-        background-image: url('/src/img/portfolio/3.png');
+        background-image: url('/src/img/portfolio/1.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: round;
@@ -70,16 +70,48 @@
     .portafolio{
         position: relative;
         height: 250px;
-        .portafolio-img{
-            position: absolute;
-        }
-        .portafolio-info{
-            position: absolute;
-        }
+        overflow: hidden;
         @include m.tablet{
             height: 250!important;
         }
       
-        background-color: red;
+        .overlay{
+            position: absolute;
+            background-color: v.$bg;
+            filter: opacity(90%);
+            height: 100%;
+            width: 100%;
+            transition: 0.5s;
+            transform: translatey(100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &:hover{
+            
+        }
     }
+}
+.portafolio .overlay{
+    h3{
+        color: white;
+    }
+    a{
+        color: v.$blanco;
+        padding: .6rem 1rem;
+        background-color: v.$negro;
+        border-radius: 1rem;
+        opacity: 100%;
+        margin-top: 1rem;
+        i{
+            margin-left: 1rem;
+        }
+    }
+}
+.portafolio:hover .overlay {
+    
+        transform: translatey(0px);
+      
+   
 }

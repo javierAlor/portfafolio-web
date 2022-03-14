@@ -703,14 +703,14 @@ ul {
   height: 100%;
 }
 .portafolios__cont .portafolio2 {
-  background-image: url("/src/img/portfolio/2.jpg");
+  background-image: url("/src/img/portfolio/4.png");
   background-size: cover;
   background-position: center center;
   background-repeat: round;
   height: 100%;
 }
 .portafolios__cont .portafolio3 {
-  background-image: url("/src/img/portfolio/3.png");
+  background-image: url("/src/img/portfolio/1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: round;
@@ -740,16 +740,76 @@ ul {
 .portafolios__cont .portafolio {
   position: relative;
   height: 250px;
-  background-color: red;
-}
-.portafolios__cont .portafolio .portafolio-img {
-  position: absolute;
-}
-.portafolios__cont .portafolio .portafolio-info {
-  position: absolute;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .portafolios__cont .portafolio {
     height: 250 !important;
   }
+}
+.portafolios__cont .portafolio .overlay {
+  position: absolute;
+  background-color: #1E2326;
+  filter: opacity(90%);
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  transform: translatey(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portafolio .overlay h3 {
+  color: white;
+}
+.portafolio .overlay a {
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  background-color: #000000;
+  border-radius: 1rem;
+  opacity: 100%;
+  margin-top: 1rem;
+}
+.portafolio .overlay a i {
+  margin-left: 1rem;
+}
+
+.portafolio:hover .overlay {
+  transform: translatey(0px);
+}
+
+.contacto {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 4rem 0;
+}
+.contacto h2 {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor__cards {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.contenedor__cards .card {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252A2E;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+.contenedor__cards .card:hover {
+  cursor: pointer;
+}
+.contenedor__cards .card .icon_contact {
+  font-size: 3rem;
 }

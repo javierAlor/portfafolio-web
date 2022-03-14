@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
    
     //typeIt
     new TypeIt("#txtIntro", {
-        strings: "Desarrollador Web!",
+        strings: "Desarrollador Web y UX Designer",
       }).go();
 });
 
