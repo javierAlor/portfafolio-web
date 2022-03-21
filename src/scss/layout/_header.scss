@@ -4,7 +4,7 @@
 .contenedor-header {
     position: relative;
     height: 100vh;
-    background-image: url('/src/img/computer3.jpg');
+    background-image: url('/build/img/desktop.jpg');
     background-position: center center;
     background-repeat: none;
     background-size: cover;
@@ -60,7 +60,7 @@
         @media screen and (max-width: v.$tablet) {
             position: absolute;
             display: block !important;
-            top: 4.5rem;
+            top: 7rem;
             right: 0;
             width: 250px;
             padding: 2rem 1rem;
@@ -80,6 +80,9 @@
             align-items: center;
         }
     }
+}
+.header .link_section{
+    color: v.$blanco;
 }
 
 .nav-principal {

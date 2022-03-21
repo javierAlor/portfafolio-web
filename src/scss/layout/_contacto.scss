@@ -7,16 +7,24 @@
     margin-bottom: 5rem;
     padding:  4rem 0;
     h2{
-        margin-bottom: 5rem;
+        position: relative;
+        margin: 5rem 0;
+        &:after{
+            @include m.lineaVerde;
+        }
     }
 }
 .contenedor__cards{
-    
+        @include m.grid(2, 1rem);
+        @include m.telefono{
+             @include m.grid(4, 2rem);
+        }
        @include m.tablet{
            display: grid;
             @include m.grid(4, 2rem);
             
        }
+       
 
    .card{
        align-self: center;

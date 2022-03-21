@@ -1,0 +1,8 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    padding: 3rem 0;
+    background-color: v.$box;
+    text-align: center;
+}

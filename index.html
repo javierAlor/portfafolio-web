@@ -27,10 +27,9 @@
 
                 <h1>Javier<span> Alor</span></h1>
                 <ul class="nav-principal">
-                    <li>INICIO</li>
-                    <li>SOBRE MI</li>
-                    <li>PORTAFOLIO</li>
-                    <li>CONTÁCTO</li>
+                    <li><a href="#aboutme" class="link_section">SOBRE MI</a></li>
+                    <li><a href="#portafolio" class="link_section">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" class="link_section">CONTACTO</a></li>
 
                 </ul>
                 <div class="hamburger">
@@ -53,9 +52,9 @@
 
     </header>
 
-    <section class="about-me contenedor">
+    <section id="aboutme" class="about-me contenedor">
         <div class="img">
-            <img src="/src/img/aboutme.jpg" alt="">
+            <img src="/build/img/aboutme.jpg" alt="">
         </div>
 
         <div class="info">
@@ -98,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="portafolios">
+    <section id="portafolio" class="portafolios">
         <h2 class="contenedor">Trabajos Recientes</h2>
         <div class="portafolios__cont contenedor">
 
@@ -155,7 +154,7 @@
 
         </div>
     </section>
-    <section class="contacto contenedor">
+    <section id="contacto" class="contacto contenedor">
         <h2 class="contenedor">Contactos</h2>
         <div class="contenedor__cards">
             <div class="card">
@@ -173,6 +172,9 @@
         </div>
 
     </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
 
     <!--plugin  typell - para animar texto-->
     <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
