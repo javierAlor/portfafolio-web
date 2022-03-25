@@ -10,24 +10,10 @@ document.addEventListener('DOMContentLoaded', function(){
         this.classList.toggle('is-active');
         menu.classList.toggle('menu-mostrar');
     });
-   scrollNav();
+   
     //typeIt
     new TypeIt("#txtIntro", {
         strings: "Desarrollador Web y UX Designer",
       }).go();
-
-
-      function scrollNav(){
-        const enlaces = document.querySelectorAll('.nav-principal a');
-        enlaces.forEach(enlace=>{
-            enlace.addEventListener('click', function(e)
-            {   
-                e.preventDefault();
-                const seccionScroll = e.target.attributes.href.value;
-                const seccion = document.querySelector(seccionScroll);
-                seccion.scrollIntoView({behavior: "smooth"});
-            });
-        });
-    }
 });
 
