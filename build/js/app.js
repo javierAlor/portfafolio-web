@@ -1,19 +1,2 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.nav-principal');
-
-   window.addEventListener('resize', function(){
-        console.log("creciendo");
-        menu.classList.remove('menu-mostrar');
-   })
-    hamburger.addEventListener('click', function(){
-        this.classList.toggle('is-active');
-        menu.classList.toggle('menu-mostrar');
-    });
-   
-    //typeIt
-    new TypeIt("#txtIntro", {
-        strings: "Desarrollador Web y UX Designer",
-      }).go();
-});
-
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".hamburger"),t=document.querySelector(".nav-principal");window.addEventListener("resize",(function(){console.log("creciendo"),t.classList.remove("menu-mostrar")})),e.addEventListener("click",(function(){this.classList.toggle("is-active"),t.classList.toggle("menu-mostrar")})),new TypeIt("#txtIntro",{strings:"Desarrollador Web y UX Designer"}).go()}));
+//# sourceMappingURL=app.js.map

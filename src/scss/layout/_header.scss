@@ -42,6 +42,13 @@
     position: absolute;
     z-index: 200;
     background-color: v.$box;
+    @include m.tablet{
+        &.fijo{
+         position: fixed;
+         width: 100%;
+         box-shadow: .1rem .2rem .1rem rgb(124, 124, 124);
+     } 
+     }
     h1 {
         color: v.$verde;
 
